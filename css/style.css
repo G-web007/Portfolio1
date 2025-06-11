@@ -10,11 +10,34 @@ body, h1,h2,h3,h4,h5,h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
-.sidebarLeft {
-    width: 40%;
-    background-color: aqua;
-} 
+.wrapper {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 100vh;
+    overflow: hidden;
+}
 
-.backgroundImg {
-    background-image: url("../images/bg.jpg");
+.sidebarLeft {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.bgImg {
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: luminosity;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.sidebarRight {
+  height: 100vh;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #fff; 
 }
