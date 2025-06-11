@@ -18,12 +18,12 @@
     <div class="sidebarLeft">
         <div class="bgImg"></div>
     </div>
-    
+
     <!-- Main Content -->
     <div class="sidebarRight">
-        <nav>
-            <a href=""><i class="fa-solid fa-xmark"></i></a>
-            <div>
+        <nav id="myNav" class="overlay">
+            <a href="javascript:void(0)" id="closeBtn" class="menuXmark"><i class="fa-solid fa-xmark"></i></a>
+            <div class="overlay-content">
                 <a href="#">Home</a>
                 <a href="#">Portfolio</a>
                 <a href="#">About</a>
@@ -33,7 +33,7 @@
 
         <!-- Page Content -->
         <div>
-            <span><i class="fa-solid fa-bars"></i></span>
+            <span id="openBtn" class="menuIcon"><i class="fa-solid fa-bars"></i></span>
 
             <!-- Header -->
             <header>
