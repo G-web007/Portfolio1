@@ -19,9 +19,10 @@ h2 {
 
 h3 {
     color: rgb(128, 128, 128);
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 400;
     padding: 30px 0;
+    margin-top: 10px;
 }
 
 hr {
@@ -145,7 +146,7 @@ header p {
     padding: 30px;
 }
 
-header button {
+button {
     padding: 20px 30px;
     background-color: #f0f0f0;
     border: none;
@@ -154,12 +155,16 @@ header button {
     font-family: 'Montserrat', sans-serif;
 }
 
-header button:hover {
+button:hover {
     background-color: #cacaca;
 }
 /* Hero section end */
 
 /* Image grid */
+.portfolio {
+    margin-bottom: 50px;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -179,3 +184,70 @@ header button:hover {
     width: 100%;
 }
 /* Image grid end */
+
+/* About section */
+.about .about-paragraph {
+    font-size: 15px;
+    color: rgb(121, 121, 121);
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+/* About section end*/
+
+/* Skills */
+.skill-label {
+    padding: 15px 0;
+    color: #818181;
+    letter-spacing: 2px;
+}
+
+.skills-container {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skills {
+    padding: 7px 0;
+    color: #fff;
+    background-color: #808080;
+}
+
+.html {
+    width: 95%;
+    text-align: center;
+}
+
+.css {
+    width: 85%;
+    text-align: center; 
+}
+
+.javascript {
+    width: 90%;
+    text-align: center;
+}
+/* Skills end */
+
+/* Stats */
+.stats {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #808080;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.stats .stat {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+
+.stats .stat span {
+    font-size: 25px;
+}
+/* Stats end */
