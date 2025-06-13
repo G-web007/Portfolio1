@@ -22,7 +22,7 @@ h3 {
     font-size: 22px;
     font-weight: 400;
     padding: 30px 0;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 hr {
@@ -251,3 +251,30 @@ button:hover {
     font-size: 25px;
 }
 /* Stats end */
+
+/* Testimonials kapag diri perfect square maging oblong kaya kailangan naton gumamit height & object-fit */ 
+.testimonials {
+    display: flex;
+    align-items: center;
+}
+
+.testimonials img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 16px 20px 0;
+}
+
+.testimonials span {
+    margin-right: 15px;
+    font-size: 20px;
+    color: #000;
+}
+
+.testimonials p {
+    color: #818181;
+    padding-bottom: 20px;
+}
+/* Testimonials */
