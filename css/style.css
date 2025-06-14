@@ -185,7 +185,7 @@ button:hover {
 /* Image grid end */
 
 /* About section */
-.about .about-paragraph {
+#about .about-paragraph {
     font-size: 15px;
     color: rgb(121, 121, 121);
     font-family: 'Montserrat', sans-serif;
@@ -350,9 +350,10 @@ button:hover {
     padding: 20px;
 }
 
-.contact-image {
+.contact-image img {
     margin: 40px 0;
-      overflow-y: auto;
+    overflow-y: auto;
+    width: 100%;
 }
 
 .contact-form p {
@@ -393,7 +394,7 @@ footer i {
     }
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .wrapper {
         display: grid;
         grid-template-columns: auto auto;
@@ -405,6 +406,7 @@ footer i {
       max-width: 500px;
       border-radius: 10px;
       margin-bottom: 15px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
 
     .sidebarLeft .bgImg {
@@ -414,9 +416,38 @@ footer i {
     header {
         margin: 150px 0;
     }
+}
 
-    .overlay {
-        width: 0;
+@media screen and (max-width: 600px) {
+    #home img {
+        width: 60%;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header {
+        margin: 0;
+    }
+
+    .column {
+        flex: 100%;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pricing {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pricing .columns {
+        width: 100%;
     }
 }
+
 /* Media queries end */
