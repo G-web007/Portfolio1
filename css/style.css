@@ -51,7 +51,6 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 1;
   height: 100%;
   width: 100%;
 }
@@ -138,7 +137,7 @@ header {
 }
 
 header h1 {
-    font-size: 65px;
+    font-size: 55px;
     font-weight: 600;
 }
 
@@ -353,6 +352,7 @@ button:hover {
 
 .contact-image {
     margin: 40px 0;
+      overflow-y: auto;
 }
 
 .contact-form p {
@@ -385,3 +385,38 @@ footer i {
     padding: 10px;
 }
 /* Footer end */
+
+/* Media queries */
+@media (max-width: 1020px   ) {
+    header h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #home img {
+      display: block !important;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .sidebarLeft .bgImg {
+        display: none;
+    }
+
+    header {
+        margin: 150px 0;
+    }
+
+    .overlay {
+        width: 0;
+    }
+}
+/* Media queries end */
